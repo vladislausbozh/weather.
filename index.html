@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="app">
+      <div class="overlay">
+         <div class="container">
+
+
+            <div class="section section__input">
+               <div class="search">
+                  <input type="text" placeholder="Город ..." name="" id="input">
+               </div>
+               <button  id="search-button">°C</button>
+            </div>
+            <div class="error" id="error">
+               <p>Неверное название города</p>
+            </div>
+            <div class="section section__temperature">
+               <div class="icon">
+                  <h3 id="city">
+                     Москва
+                  </h3>
+                  <img id="icon" src="./img/mist.png" alt="">
+                  <h3 id="clouds">Cloude</h3>
+               </div>
+               <div class="temperature">
+                  <h1 id="temp">34 °C</h1>
+               </div>
+            </div>  
+
+            <div class="section section__descriptions">
+               <div class="card">
+                  <div class="descriptions__card-icon">
+                     <i class="fa-solid fa-temperature-arrow-up"></i>
+                     <small>min</small>
+                  </div>
+                  <h2 id="min">32 °C</h2>
+               </div>
+
+               <div class="card">
+                  <div class="descriptions__card-icon">
+                     <i class="fa-solid fa-temperature-arrow-down"></i>
+                     <small >max</small>
+                  </div>
+                  <h2 id="max">32 °C</h2>
+               </div>
+
+               <div class="card">
+                  <div class="descriptions__card-icon">
+                     <i class="fa-solid fa-water"></i>
+                     <small>humidity</small>
+                  </div>
+                  <h2 id ="humidity">100 %</h2>
+               </div>
+
+               <div class="card">
+                  <div class="descriptions__card-icon">
+                     <i class="fa-solid fa-wind"></i>
+                     <small>speed wind</small>
+                  </div>
+                  <h2 id="wind">32 м/c</h2>
+               </div>
+
+               
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://kit.fontawesome.com/dacf903ef3.js" crossorigin="anonymous"></script>
+   <script type="module" src="/js/main.js"></script>
+</body>
+</html>
