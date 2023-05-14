@@ -47,3 +47,4 @@ searchButton.addEventListener('click',() => {
    getWeatherData(input.value)
    input.value = ''
 })
+// dada
